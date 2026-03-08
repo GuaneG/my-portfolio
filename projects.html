@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-slate-50 text-slate-800">
+    <!--HEADER + NAVIGATION BAR STARTS-->
+    <header class="bg-white border-b">
+      <nav class="max-w-5xl mx-auto px-4 py-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <a href="index.html" class="text-lg font-bold text-slate-900">Can Gere</a>
+        <div class="flex flex-wrap gap-2">
+          <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-slate-100 transition hover:scale-110">Home</a>
+          <a href="projects.html" class="px-3 py-2 rounded-md text-sm font-medium bg-slate-900 text-white hover:bg-slate-800 transition hover:scale-110">Projects</a>
+          <a href="contacts.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-slate-100 transition hover:scale-110">Contact</a>
+        </div>
+      </nav>
+      <div class="max-w-5xl mx-auto px-4 pb-6 text-center">
+        <h1 class="text-3xl font-extrabold text-slate-900">Projects</h1>
+        <p class="mt-2 text-slate-600">A selection of my academic and personal work.</p>
+      </div>
+    </header>
+    <!--HEADER + NAVIGATION BAR ENDS-->
+
+    <!--MAIN ELEMENT STARTS-->
+    <main class="max-w-5xl mx-auto px-4 py-8 space-y-8">
+      <section>
+        <h2 class="text-2xl font-bold text-slate-900">My Projects</h2>
+        <p class="mt-2 text-slate-600">Here are some of my projects.</p>
+
+        <div class="mt-6 grid gap-6 md:grid-cols-2">
+          <!-- Project 1 -->
+          <article class="bg-white rounded-xl border shadow-sm p-6 hover:shadow-md">
+            <h3 class="text-lg font-semibold text-slate-900">Testing Trendyol Website</h3>
+            <p class="mt-2 text-slate-700">
+              In this project, I tested the search functionality of Trendyol using Boundary Value Analysis on the search bar.
+            </p>
+            <ul class="mt-4 list-disc pl-5 text-slate-700 space-y-1">
+              <li>Technologies: Java, Selenium</li>
+              <li>Testing Method: Boundary Value Analysis</li>
+            </ul>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="bg-white rounded-xl border shadow-sm p-6 hover:shadow-md">
+            <h3 class="text-lg font-semibold text-slate-900">F1 SQL Database Project</h3>
+            <p class="mt-2 text-slate-700">
+              In this project, my teammates and I designed and implemented an SQL database and a desktop application
+              for Formula 1 racing data based on a single season.
+            </p>
+            <ul class="mt-4 list-disc pl-5 text-slate-700 space-y-1">
+              <li>Technologies: Java, SQL</li>
+              <li>Tools: MySQL Workbench, NetBeans IDE</li>
+              <li>GUI: Java Swing</li>
+            </ul>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="bg-white rounded-xl border shadow-sm p-6 hover:shadow-md md:col-span-2">
+            <h3 class="text-lg font-semibold text-slate-900">File Organizer</h3>
+            <p class="mt-2 text-slate-700">
+              In this project, I developed a basic file organizer using Java and its built-in libraries.
+              The app categorizes files based on their extensions.
+            </p>
+            <ul class="mt-4 list-disc pl-5 text-slate-700 space-y-1">
+              <li>Technologies: Java</li>
+              <li>Tools: IntelliJ IDEA</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!--View GitHub -->
+      <section class="bg-slate-900 text-white rounded-xl p-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <h2 class="text-xl font-semibold">More Projects</h2>
+          <p class="mt-1 text-slate-200 text-sm">You can find more code samples on my GitHub profile.</p>
+        </div>                                                      
+        <a href="https://github.com/cangere" target="_blank" class="inline-flex items-center justify-center px-4 py-2 rounded-md bg-white text-slate-900 font-medium transition hover:scale-110">
+          Visit GitHub
+        </a>
+      </section>
+    </main>
+    <!--MAIN ELEMENT ENDS-->
+  
+     <!--FOOTER-->
+    <footer class="bg-white border-t">
+        <div class="max-w-5xl mx-auto px-4 py-6 text-center text-sm text-slate-600">
+            <p>&copy; 2026 Can Gere</p>
+            <a href="https://instagram.com/cangeree" target="_blank" class="inline-block mt-2">
+                <img src="instagram-icon.png" alt="Instagram" class="w-6 h-6 inline">My Instagram
+            </a>
+        </div>
+    </footer>
+  </body>
+</html>
