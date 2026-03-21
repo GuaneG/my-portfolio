@@ -167,7 +167,7 @@
           if(task.isEditing){
             //editing mode elements
             const editWrapper = document.createElement('div');
-            editWrapper.className = 'flex flex-col sm:flex-row min-w-0 w-full  gap-2';
+            editWrapper.className = 'flex flex-col sm:flex-row min-w-0 w-full gap-2';
 
             //input for editing the task
             const editInput = document.createElement('input');
@@ -177,7 +177,7 @@
 
             //buttons for editing mode
             const actionsButtons = document.createElement('div');
-            actionsButtons.className = 'flex gap-2';
+            actionsButtons.className = 'flex px-2 py-1 gap-2';
 
             //save button for editing mode
             const saveButton = document.createElement('button');
@@ -191,15 +191,10 @@
 
             editButton.classList.add('hidden'); //hide the edit button when editing 
 
-        
-
             //if user presses enter while editing the task, save the task
             editInput.addEventListener('keydown', (event) => {
               if (event.key === 'Enter') {
                 saveButton.click();
-                saveTasks();
-                renderTasks();
-                showFeedback('Task updated.', false);
               }
             });
 
@@ -219,7 +214,10 @@
             //save button event listener to save the changes and exit editing mode
             saveButton.addEventListener('click', () => {
               const newTitle = editInput.value.trim();
-              if (newTitle) {
+              if (newTitle.toLowerCase() === task.title.toLowerCase()) {
+                showFeedback('No changes made to the task.', true);
+              }
+              if (newTitle.length > 0 && newTitle.toLowerCase() !== task.title.toLowerCase()) {
                 task.title = newTitle;
                 task.isEditing = false;
                 saveTasks();
